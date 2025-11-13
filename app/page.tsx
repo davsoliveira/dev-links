@@ -1,5 +1,6 @@
 import { LinkList } from "./components/LinkList";
 import { ProfileSection } from "./components/ProfileSection";
+import { SocialMediaList } from "./components/SocialMediaList";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <section className="max-w-147 mx-auto pt-14 flex flex-col items-center">
         <ProfileSection />
         <LinkList />
+        <SocialMediaList />
       </section>
     </main>
   );
