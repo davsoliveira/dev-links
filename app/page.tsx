@@ -4,8 +4,8 @@ import { SocialMediaList } from "./components/SocialMediaList";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen bg-[url('/bg-desktop.jpg')] bg-center bg-cover">
-      <section className="max-w-147 mx-auto pt-14 flex flex-col items-center">
+    <main className="h-screen w-full bg-[url('/bg-desktop.jpg')] bg-cover bg-center">
+      <section className="mx-auto flex max-w-147 flex-col items-center pt-14">
         <ProfileSection />
         <LinkList />
         <SocialMediaList />

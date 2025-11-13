@@ -25,11 +25,11 @@ const socialMedias = [
 
 export function SocialMediaList() {
   return (
-    <ul className="pt-8 flex items-center gap-3">
+    <ul className="flex items-center gap-3 pt-8">
       {socialMedias.map((socialMedia) => (
         <li
           key={socialMedia.id}
-          className="hover:bg-gray-400/30 rounded-full p-3 transition"
+          className="rounded-full p-3 transition hover:bg-gray-400/30"
         >
           <a href={socialMedia.href}>
             <socialMedia.icon size={24} />

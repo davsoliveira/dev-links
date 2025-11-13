@@ -23,17 +23,12 @@ export function LinkList() {
   ];
 
   return (
-    <ul className="w-full flex flex-col gap-4">
+    <ul className="flex w-full flex-col gap-4">
       {links.map((link) => (
         <li key={link.id}>
           <a
             href={link.href}
-            className="flex justify-center py-4 rounded-lg border border-white/40 
-            bg-white/20 text-white
-            shadow-[0_0_15px_rgba(255,255,255,0.2)] 
-            text-shadow-[0_0_15px_rgba(255,255,255,1)] 
-            backdrop-blur-sm 
-            hover:bg-white/20 transition-all duration-300"
+            className="flex justify-center rounded-lg border border-white/40 bg-white/20 py-4 text-white shadow-[0_0_15px_rgba(255,255,255,0.2)] backdrop-blur-sm transition-all duration-300 text-shadow-[0_0_15px_rgba(255,255,255,1)] hover:bg-white/20"
           >
             {link.title}
           </a>
