@@ -1,20 +1,10 @@
-"use client";
-import { createClient } from "@prismicio/client";
-import { useEffect, useState } from "react";
+import { Content } from "@prismicio/client";
 
-export function LinkList() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [data, setData] = useState<any>();
+type LinkListProps = {
+  data: Content.AuthorDocument["data"];
+};
 
-  useEffect(() => {
-    async function fetchData() {
-      const client = createClient("dev-links-davs");
-      const response = await client.get();
-      setData(response.results[0].data);
-    }
-    fetchData();
-  }, []);
-
+export function LinkList({ data }: LinkListProps) {
   return (
     <ul className="flex w-full flex-col gap-4 px-8 pt-10 md:px-0">
       {data?.link_list.map((link) => (

@@ -1,22 +1,12 @@
-"use client";
-import { createClient } from "@prismicio/client";
-import { useEffect, useState } from "react";
+import { Content } from "@prismicio/client";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaLetterboxd } from "react-icons/fa6";
 
-export function SocialMediaList() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [data, setData] = useState<any>();
+type SocialMediaListProps = {
+  data: Content.AuthorDocument["data"];
+};
 
-  useEffect(() => {
-    async function fetchData() {
-      const client = createClient("dev-links-davs");
-      const response = await client.get();
-      setData(response.results[0].data);
-    }
-    fetchData();
-  }, []);
-
+export function SocialMediaList({ data }: SocialMediaListProps) {
   const socialMedias = [
     {
       id: 1,
