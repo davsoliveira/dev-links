@@ -1,7 +1,7 @@
-import { LinkList } from "./components/LinkList";
-import { ProfileSection } from "./components/ProfileSection";
-import { SocialMediaList } from "./components/SocialMediaList";
-import { ThemeToggle } from "./components/ThemeToggle";
+import { LinkList } from "./components/link-list";
+import { ProfileSection } from "./components/profile-section";
+import { SocialMediaList } from "./components/social-media-list";
+import { ThemeToggle } from "./components/theme-toggle";
 
 export default function Home() {
   return (

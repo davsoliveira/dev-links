@@ -85,51 +85,6 @@ interface AuthorDocumentData {
   name: prismic.KeyTextField;
 
   /**
-   * instagram field in *DevLinks*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: author.instagram
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/fields/link
-   */
-  instagram: prismic.LinkField<
-    string,
-    string,
-    unknown,
-    prismic.FieldState,
-    never
-  >;
-
-  /**
-   * github field in *DevLinks*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: author.github
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/fields/link
-   */
-  github: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
-
-  /**
-   * linkedin field in *DevLinks*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: author.linkedin
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/fields/link
-   */
-  linkedin: prismic.LinkField<
-    string,
-    string,
-    unknown,
-    prismic.FieldState,
-    never
-  >;
-
-  /**
    * davi_avatar field in *DevLinks*
    *
    * - **Field Type**: Image
@@ -161,23 +116,6 @@ interface AuthorDocumentData {
    * - **Documentation**: https://prismic.io/docs/fields/text
    */
   username: prismic.KeyTextField;
-
-  /**
-   * letterboxd field in *DevLinks*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: author.letterboxd
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/fields/link
-   */
-  letterboxd: prismic.LinkField<
-    string,
-    string,
-    unknown,
-    prismic.FieldState,
-    never
-  >;
 
   /**
    * link_list field in *DevLinks*
