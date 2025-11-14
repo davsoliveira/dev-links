@@ -1,7 +1,7 @@
 {
   "format": "custom",
   "id": "author",
-  "label": "Author",
+  "label": "DevLinks",
   "repeatable": true,
   "status": true,
   "json": {
@@ -28,6 +28,84 @@
           "allowTargetBlank": true,
           "allowText": true,
           "repeat": false
+        }
+      },
+      "github": {
+        "type": "Link",
+        "config": {
+          "label": "github",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "linkedin": {
+        "type": "Link",
+        "config": {
+          "label": "linkedin",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "davi_avatar": {
+        "type": "Image",
+        "config": {
+          "label": "davi_avatar",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "davi_avatar_dark": {
+        "type": "Image",
+        "config": {
+          "label": "davi_avatar_dark",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "username": {
+        "type": "Text",
+        "config": {
+          "label": "username",
+          "placeholder": ""
+        }
+      },
+      "letterboxd": {
+        "type": "Link",
+        "config": {
+          "label": "letterboxd",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "link_list": {
+        "type": "Link",
+        "config": {
+          "label": "link_list",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": true
+        }
+      },
+      "social_media": {
+        "type": "Link",
+        "config": {
+          "label": "social_media",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": true
         }
       }
     }

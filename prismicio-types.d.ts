@@ -70,11 +70,11 @@ type ContentRelationshipFieldWithData<
 }[Exclude<TCustomType[number], string>["id"]];
 
 /**
- * Content for Author documents
+ * Content for DevLinks documents
  */
 interface AuthorDocumentData {
   /**
-   * name field in *Author*
+   * name field in *DevLinks*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
@@ -85,7 +85,7 @@ interface AuthorDocumentData {
   name: prismic.KeyTextField;
 
   /**
-   * instagram field in *Author*
+   * instagram field in *DevLinks*
    *
    * - **Field Type**: Link
    * - **Placeholder**: *None*
@@ -100,10 +100,114 @@ interface AuthorDocumentData {
     prismic.FieldState,
     never
   >;
+
+  /**
+   * github field in *DevLinks*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: author.github
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/link
+   */
+  github: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
+
+  /**
+   * linkedin field in *DevLinks*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: author.linkedin
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/link
+   */
+  linkedin: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
+
+  /**
+   * davi_avatar field in *DevLinks*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: author.davi_avatar
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  davi_avatar: prismic.ImageField<never>;
+
+  /**
+   * davi_avatar_dark field in *DevLinks*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: author.davi_avatar_dark
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  davi_avatar_dark: prismic.ImageField<never>;
+
+  /**
+   * username field in *DevLinks*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: author.username
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  username: prismic.KeyTextField;
+
+  /**
+   * letterboxd field in *DevLinks*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: author.letterboxd
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/link
+   */
+  letterboxd: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
+
+  /**
+   * link_list field in *DevLinks*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: author.link_list
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/link
+   */
+  link_list: prismic.Repeatable<
+    prismic.LinkField<string, string, unknown, prismic.FieldState, never>
+  >;
+
+  /**
+   * social_media field in *DevLinks*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: author.social_media
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/link
+   */
+  social_media: prismic.Repeatable<
+    prismic.LinkField<string, string, unknown, prismic.FieldState, never>
+  >;
 }
 
 /**
- * Author document from Prismic
+ * DevLinks document from Prismic
  *
  * - **API ID**: `author`
  * - **Repeatable**: `true`
