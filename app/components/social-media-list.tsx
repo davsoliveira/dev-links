@@ -1,4 +1,4 @@
-import { Content } from "@prismicio/client";
+import { Content, asLink } from "@prismicio/client";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaLetterboxd } from "react-icons/fa6";
 
@@ -11,24 +11,26 @@ export function SocialMediaList({ data }: SocialMediaListProps) {
     {
       id: 1,
       icon: FaGithub,
-      href: data?.social_media[0].url,
+      href: asLink(data.social_media?.[0]) ?? "",
     },
     {
       id: 2,
       icon: FaInstagram,
-      href: data?.social_media[1].url,
+      href: asLink(data.social_media?.[1]) ?? "",
     },
     {
       id: 4,
       icon: FaLinkedin,
-      href: data?.social_media[2].url,
+      href: asLink(data.social_media?.[2]) ?? "",
     },
     {
       id: 3,
       icon: FaLetterboxd,
-      href: data?.social_media[3].url,
+      href: asLink(data.social_media?.[3]) ?? "",
     },
-  ];
+  ].filter((item) => item.href);
+
+  if (socialMedias.length === 0) return null;
 
   return (
     <ul className="flex items-center gap-3 pt-8">
@@ -37,7 +39,7 @@ export function SocialMediaList({ data }: SocialMediaListProps) {
           key={socialMedia.id}
           className="rounded-full p-3 transition hover:bg-gray-400/30"
         >
-          <a href={socialMedia.href} target="_blank">
+          <a href={socialMedia.href} target="_blank" rel="noreferrer">
             <socialMedia.icon size={24} />
           </a>
         </li>
