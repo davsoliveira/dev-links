@@ -2,7 +2,7 @@ DevLinks
 
 This was the practical challenge in level 01 of Rocketseat's Next.js course.
 
-<!-- ## [View the project here](https://dev-links-liard-chi.vercel.app/) -->
+## [View the project here](https://dev-links-d4v5.vercel.app/)
 
 ## Table of contents
 
